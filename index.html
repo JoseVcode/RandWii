@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector Aleatorio con Panel Oculto</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <button class="settings-toggle-btn">⚙️ Configurar Lista</button>
+
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <h2>📝 Panel de Control</h2>
+            <button class="close-sidebar-btn">❌ Cerrar</button>
+        </div>
+        
+        <div class="file-actions">
+            <label for="jsonFile" class="btn btn-secondary">📁 Cargar JSON</label>
+            <input type="file" id="jsonFile" accept=".json">
+            <button id="downloadBtn" class="btn btn-secondary">💾 Descargar</button>
+        </div>
+        <p class="status-text">📋 0 elementos cargados actualmente</p>
+
+        <div class="item-form">
+            <input type="text" placeholder="Añadir nuevo elemento...">
+            <button class="btn btn-primary">Añadir</button>
+        </div>
+
+        <ul class="items-list">
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <h1 class="main-title">🎲 Selector Aleatorio</h1>
+        <button class="btn-generate">¡GENERAR ELEMENTO AL AZAR!</button>
+        <div class="result-container">
+            <div class="winner-text"></div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
